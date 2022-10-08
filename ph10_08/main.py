@@ -19,6 +19,7 @@ MSE5 = cross_val_score(lin_reg, x5, y, scoring='neg_mean_squared_error', cv=5)
 mean_MSE = np.mean(MSE5)
 print(mean_MSE)
 
+
 parameters = {'alpha': [1e-15, 1e-10, 1e-8, 1e-4, 1e-3, 1e-2, 1, 5, 10, 20]}
 
 # Ridge Regression
