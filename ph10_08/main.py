@@ -29,7 +29,6 @@ ridge_regressor.fit(x5, y)
 print(ridge_regressor.best_params_)
 print(ridge_regressor.best_score_)
 
-
 # Lasso Regression
 lasso = Lasso()
 lasso_regressor = GridSearchCV(lasso, parameters, scoring='neg_mean_squared_error', cv=5)
